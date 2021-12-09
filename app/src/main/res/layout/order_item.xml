@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#f3f3f3"
+    app:cardElevation="8dp"
+    android:layout_margin="12dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/tv_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:textSize="18sp"
+                android:text="Item Title"/>
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/tv_total_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:textSize="18sp"
+                android:text="Item Title"/>
+
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/tv_payment_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp"
+                android:textSize="18sp"
+                android:text="Item Title"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_sub_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+

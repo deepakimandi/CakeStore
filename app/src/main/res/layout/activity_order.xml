@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:padding="8dp"
+                android:text="Verify Address"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:padding="8dp"
+                android:text="Select Payment method"
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_attach_money_black_24dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="9"
+                        android:fontFamily="@font/antic"
+                        android:text="Total Payable : "
+                        android:textColor="#000"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/payable_amt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/antic"
+                        android:text="Rs.0/-"
+                        android:textColor="#000"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_location_on_black_24dp" />
+
+                        <ImageView
+                            android:id="@+id/edit_address"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/ic_edit_primary_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+
+                            android:id="@+id/address_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="9"
+                            android:fontFamily="@font/antic"
+                            android:text="Your Address"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_local_phone_black_24dp" />
+
+                        <ImageView
+                            android:id="@+id/edit_phone"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            app:srcCompat="@drawable/ic_edit_primary_24dp"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/phone_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="9"
+                            android:fontFamily="@font/antic"
+                            android:text="Phone Number"
+                            android:textColor="#000"
+                            android:textSize="22sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#000" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="#000" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_op"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:fontFamily="@font/antic"
+                        android:text="Online Payment"
+                        android:textColor="#000"
+                        android:textSize="22sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_cod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/antic"
+                        android:text="Cash on Delivery"
+                        android:textColor="#000"
+                        android:textSize="22sp" />
+
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_ui"
+            android:fontFamily="@font/bungee"
+            android:text="Proceed to pay"
+            android:textColor="#fff"
+            android:textSize="28dp" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
